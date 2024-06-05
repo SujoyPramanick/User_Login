@@ -1,0 +1,412 @@
+.gg {
+  background-image: url(../Images/wallpaperflare.com_wallpaper\ \(6\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapp {
+  width: 820px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: black;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapp h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.btnss {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.students {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 2px solid rgba(248, 244, 244, 0.955);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(185, 192, 241, 0.975);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.student h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.student p {
+  margin: 5px 0;
+}
+
+.btn2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
+  background: #595959fb;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d0cdcd;
+  transition: background 1s, color 0.3s;
+}
+
+.btn2:hover {
+  background: #2f2f2f;
+  color: #fff;
+}
+
+/* Details */
+
+.Documents-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 35px;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 83);
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.folderContainer {
+  width: 20px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.fileBack {
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+.filePage {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+.fileFront {
+  width: 85%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.95;
+  transform-origin: bottom;
+  transition: all 0.3s ease-out;
+}
+.text {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.Documents-btn:hover .filePage {
+  transform: translateY(-5px);
+}
+.Documents-btn:hover {
+  background-color: rgb(58, 58, 94);
+}
+.Documents-btn:active {
+  transform: scale(0.95);
+}
+.Documents-btn:hover .fileFront {
+  transform: rotateX(30deg);
+}
+
+/* Add Students */
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+
+
+/* Delete Students */
+
+.dllt {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #e62222;
+ }
+ 
+ .dllt, button span {
+  transition: 200ms;
+ }
+ 
+ .dllt .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+ }
+ 
+ .dllt .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .dllt svg {
+  width: 15px;
+  fill: #eee;
+ }
+ 
+ .dllt:hover {
+  background: #ff3636;
+ }
+ 
+ .dllt:hover .text {
+  color: transparent;
+ }
+ 
+ .dllt:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .dllt:focus {
+  outline: none;
+ }
+ 
+ .dllt:active .icon svg {
+  transform: scale(0.8);
+ }
+
+/* CSV file Download */
+
+.Btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+}
+
+.svgIcon {
+  fill: #2196f3;
+}
+
+.icon2 {
+  width: 18px;
+  height: 5px;
+  border-bottom: 2px solid #2196f3;
+  border-left: 2px solid #2196f3;
+  border-right: 2px solid #2196f3;
+}
+
+.tooltip {
+  position: absolute;
+  right: -80px;
+  opacity: 0;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(12, 12, 12);
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  left: -5%;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .tooltip {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover {
+  background-color: #2196f3;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .icon2 {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.Btn:hover .svgIcon {
+  fill: black;
+  animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+/* Attandance */
+
+.atn {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.atn2 {
+  --b: 3px;
+   /* border thickness */
+  --s: .45em;
+ /* size of the corner */
+  --color: #e2e2e2;
+  font-weight: bold;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.atn2:hover,
+.atn2:focus-visible {
+  --_p: 0px;
+  outline-color: #ffffff;
+  outline-offset: .05em;
+}
+
+.atn2:active {
+  background: #ffffff;
+  color: #000000;
+}

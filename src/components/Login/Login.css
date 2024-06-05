@@ -1,0 +1,139 @@
+.og {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(../Images/wallpaperflare.com_wallpaper\ \(6\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  border: 1px solid rgba(255, 255, 255, .2);
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.container p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+
+.container span {
+  font-size: 12px;
+}
+
+.container button {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #221c19, #44322b, #5c493e);
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 80px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.container form {
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.container input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  height: 40px;
+  font-weight: 700;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+  color: #ccc;
+  width: 50%;
+}
+
+.usekaro {
+  margin-bottom: 20px;
+}
+
+.toggle-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 150px 0 0 100px;
+  z-index: 1000;
+}
+
+
+.toggle {
+  background: linear-gradient(45deg, #110d0b, #241915, #362520);
+  height: 100%;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+}
+
+
+.toggle-panel {
+  color: #ccc;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  top: 0;
+}
+
+.toggle-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.em {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
