@@ -1,8 +1,8 @@
-### Install node
-# npm i
+# Install node
+### npm i
 
-### Install React Router Dom
-# npm i react-router-dom
+# Install React Router Dom
+### npm i react-router-dom
 
 # Getting Started with Create React App
 
